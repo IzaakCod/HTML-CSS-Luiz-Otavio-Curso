@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Aula sobre Headings</title>
+</head>
+
+<!--
+Tags que vão dentro do <p></p>, tags ilainer
+
+// <i></i> Serve para deixar a palavra em itálico
+// <em></em> Para dar enfaziar a uma plavra
+// alt="" Serve para descrever uma imagem, quando o leitor não consegue ver a imagem
+
+// <del></del> Serve para riscar a palavra na página
+// <ins><ins> Serve para adicionar uma palavra
+
+// <s></s> Faz a mesma coisa que o del, mas ela para colocar o traço na palavra é a mais correta
+// <u></u> Faz a mesma coisa que o ins, mas ela para adicionar uma palavra no texto é a mais correta
+
+<smal></small> Serve para deixar a palavra escohida menor um pouco do que as outras
+<sup></sup> Serve para subir uma elemento, como u número ao quadrado
+<sub</sub> Serve para descer um elemento, como por exemplo a formúla do H2O, onde o dois ficaria para baixo
+
+<br></br> Serve para quebrar linha
+<q></q> Serve para fazer citação dentro do parágrafo
+
+<span></span> É um conteiner genérico em linha que não possui valor semântico.
+Ele é utilizado para agrupar fragmentos de texto ou elementos internos de um bloco,
+permitindo aplicar estilizações visuais específicas via CSS sem quebrar o fluxo natural da linha.
+
+<div></div> Serve como um contêiner genérico de nível de bloco usado para agrupar elementos,
+e aplicar estilos ou organizar o layout de uma página, sem adicionar significado semântico ao conteúdo.
+-->
+
+
+<!-- Tags que vão fora dos parágrafos
+
+<blockquote></blockquote> Serve para fazer um bloco de citação
+e que tenho o atríbuto cite="", para dizer ou mostrar de qual local você tirou aquela citação
+
+<hr> Serve para colar uma linha na página
+<code></code> Serve para delimitar um trecho de código, caso você queira colocar um trecho de código em um texto
+<pre></pre> Serve para deixar o código formatado
+
+-->
+
+
+
+<body>
+    <h1>Meu Título</h1>
+    <p> <del>vermelho</del> <b>Lorem</b> <small> sit amet</small> consectetur adipisicing elit.
+        2<sup>2</sup> <q>Accusantium</q> H<sub>2</sub>O <s>exercitationem</s> suscipit debitis
+        culpa quos ut <ins>azul</ins> similique labore architecto, quaerat eum? Facilis, sapiente est. Tenetur deleniti
+        nobis illo fugit
+        molestiae?</p>
+
+    <hr>
+
+    <h2>Meu Título</h2>
+    <p> <span class="vermelho" style="color: red;">Lorem</span> ipsum dolor <code>console.log</code> <br>
+    <pre><code>if (!peso) {
+        setResultado("Peso inválido", false)
+        return
+    }
+    if (!altura) {
+        setResultado("Altura inválida", false)
+        return
+    }
+
+    const imc = getImc(peso, altura)
+    const nivelImc = getNivelImc(imc)
+
+    const msg = `Seu IMC é ${imc} (${nivelImc}) `
+
+    setResultado(msg, true)</code></pre> sit amet consectetur adipisicing elit. Accusantium dolorem exercitationem
+    suscipit debitis
+    culpa quos ut similique labore architecto, quaerat eum? Facilis, sapiente est. Tenetur deleniti nobis illo fugit
+    molestiae?</p>
+
+    <h3>Meu Título</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorem exercitationem suscipit debitis
+        culpa quos ut similique labore architecto, quaerat eum? Facilis, sapiente est. Tenetur deleniti nobis illo fugit
+        molestiae?</p>
+
+    <h4>Meu Título</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorem exercitationem suscipit debitis
+        culpa quos ut similique labore architecto, quaerat eum? Facilis, sapiente est. Tenetur deleniti nobis illo fugit
+        molestiae?</p>
+
+    <h5>Meu Título</h5>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorem exercitationem suscipit debitis
+        culpa quos ut similique labore architecto, quaerat eum? Facilis, sapiente est. Tenetur deleniti nobis illo fugit
+        molestiae?</p>
+
+    <h6>Meu Título</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorem exercitationem suscipit debitis
+        culpa quos ut similique labore architecto, quaerat eum? Facilis, sapiente est. Tenetur deleniti nobis illo fugit
+        molestiae?</p>
+
+    <blockquote>Aqui eu estou fazendo uma bloco de citação
+    </blockquote>
+    <div>Eu sou um bloco</div>
+</body>
+
+</html>
