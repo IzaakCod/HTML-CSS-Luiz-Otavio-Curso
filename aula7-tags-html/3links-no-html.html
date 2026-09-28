@@ -1,0 +1,153 @@
+<!-- ============================================================
+     QUADRO 3 — LINKS
+     ============================================================ -->
+
+
+<!-- ============================================================
+     <a>
+     ============================================================ -->
+
+<a href="https://www.google.com">
+    Google
+</a>
+
+<!--
+    <a> = cria um hiperlink.
+
+    href="..."
+    = define para onde o link vai.
+-->
+
+
+<!-- ============================================================
+     LINK PARA OUTRA PÁGINA DO PROJETO
+     ============================================================ -->
+
+<a href="sobre.html">
+    Sobre
+</a>
+
+<!--
+    href="sobre.html"
+    = aponta para uma página chamada sobre.html.
+-->
+
+
+<!-- ============================================================
+     target="_blank"
+     ============================================================ -->
+
+<a href="https://www.google.com" target="_blank">
+    Abrir Google em nova aba
+</a>
+
+<!--
+    target="_blank"
+    = abre o link em uma nova aba/janela.
+-->
+
+
+<!-- ============================================================
+     target="_self"
+     ============================================================ -->
+
+<a href="sobre.html" target="_self">
+    Abrir nesta aba
+</a>
+
+<!--
+    target="_self"
+    = abre o link no contexto atual.
+
+    É o comportamento padrão de um link.
+-->
+
+
+<!-- ============================================================
+     LINK PARA UMA PARTE DA PÁGINA
+     ============================================================ -->
+
+<a href="#contato">
+    Ir para contato
+</a>
+
+<section id="contato">
+
+    <h2>Contato</h2>
+
+</section>
+
+<!--
+    href="#contato"
+    = procura um elemento que tenha id="contato".
+
+    id="contato"
+    = identifica a seção de destino.
+
+    Os dois trabalham juntos.
+-->
+
+
+<!-- ============================================================
+     LINK PARA E-MAIL
+     ============================================================ -->
+
+<a href="mailto:exemplo@email.com">
+    Enviar e-mail
+</a>
+
+<!--
+    mailto:
+    = solicita ao sistema que abra um aplicativo
+    de e-mail para enviar uma mensagem.
+-->
+
+
+<!-- ============================================================
+     DOWNLOAD
+     ============================================================ -->
+
+<a href="documento.pdf" download>
+    Baixar documento
+</a>
+
+<!--
+    download
+    = indica que o recurso deve ser baixado.
+-->
+
+
+<!-- ============================================================
+     DOWNLOAD COM NOME
+     ============================================================ -->
+
+<a href="documento.pdf" download="meu-documento.pdf">
+    Baixar documento
+</a>
+
+<!--
+    download="meu-documento.pdf"
+    = sugere o nome do arquivo no download.
+-->
+
+
+<!-- ============================================================
+     target="_blank" + rel
+     ============================================================ -->
+
+<a href="https://exemplo.com" target="_blank" rel="noopener noreferrer">
+    Abrir site
+</a>
+
+<!--
+    target="_blank"
+    = abre em nova aba.
+
+    rel="noopener"
+    = evita que a página aberta tenha acesso
+    ao window.opener.
+
+    rel="noreferrer"
+    = evita o envio de informações de referência
+    para a página de destino.
+-->

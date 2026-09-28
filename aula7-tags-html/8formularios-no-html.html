@@ -1,0 +1,456 @@
+<!-- ============================================================
+     QUADRO 8 — FORMULÁRIOS
+     ============================================================ -->
+
+
+<!-- ============================================================
+     <form>
+     ============================================================ -->
+
+<form>
+
+</form>
+
+<!--
+    <form> = cria um formulário.
+-->
+
+
+<!-- ============================================================
+     action
+     ============================================================ -->
+
+<form action="/enviar">
+
+</form>
+
+<!--
+    action="/enviar"
+    = define para onde os dados do formulário
+    serão enviados.
+-->
+
+
+<!-- ============================================================
+     method
+     ============================================================ -->
+
+<form action="/enviar" method="post">
+
+</form>
+
+<!--
+    method="post"
+    = envia os dados utilizando o método HTTP POST.
+-->
+
+
+<form action="/buscar" method="get">
+
+</form>
+
+<!--
+    method="get"
+    = envia os dados através da URL.
+-->
+
+
+<!-- ============================================================
+     <label>
+     ============================================================ -->
+
+<label for="nome">
+    Nome:
+</label>
+
+<input type="text" id="nome">
+
+<!--
+    <label> = cria o texto/descrição de um campo.
+
+    for="nome"
+    = aponta para o elemento que possui id="nome".
+
+    for + id
+    = associam o label ao input.
+-->
+
+
+<!-- ============================================================
+     <input>
+     ============================================================ -->
+
+<input type="text">
+
+<!--
+    <input> = cria um campo de entrada.
+
+    type="text"
+    = define que será um campo de texto.
+-->
+
+
+<!-- ============================================================
+     TIPOS IMPORTANTES DE INPUT
+     ============================================================ -->
+
+<input type="text">
+<!-- Campo de texto -->
+
+<input type="password">
+<!-- Campo de senha -->
+
+<input type="email">
+<!-- Campo de e-mail -->
+
+<input type="number">
+<!-- Campo numérico -->
+
+<input type="date">
+<!-- Campo de data -->
+
+<input type="time">
+<!-- Campo de horário -->
+
+<input type="checkbox">
+<!-- Caixa de seleção -->
+
+<input type="radio">
+<!-- Botão de seleção -->
+
+<input type="file">
+<!-- Seleção de arquivo -->
+
+<input type="color">
+<!-- Seleção de cor -->
+
+<input type="range">
+<!-- Controle deslizante -->
+
+<input type="submit">
+<!-- Envio do formulário -->
+
+<input type="reset">
+<!-- Limpeza/restauração do formulário -->
+
+<input type="button">
+<!-- Botão comum -->
+
+
+<!-- ============================================================
+     name
+     ============================================================ -->
+
+<input type="text" name="nome">
+
+<!--
+    name="nome"
+    = identifica o campo quando os dados
+    são enviados pelo formulário.
+-->
+
+
+<!-- ============================================================
+     value
+     ============================================================ -->
+
+<input type="text" value="Izaak">
+
+<!--
+    value="Izaak"
+    = define o valor inicial do campo.
+-->
+
+
+<!-- ============================================================
+     placeholder
+     ============================================================ -->
+
+<input type="text" placeholder="Digite seu nome">
+
+<!--
+    placeholder="..."
+    = mostra uma orientação dentro do campo.
+-->
+
+
+<!-- ============================================================
+     required
+     ============================================================ -->
+
+<input type="text" required>
+
+<!--
+    required
+    = torna o preenchimento obrigatório.
+-->
+
+
+<!-- ============================================================
+     disabled
+     ============================================================ -->
+
+<input type="text" disabled>
+
+<!--
+    disabled
+    = desativa o campo.
+-->
+
+
+<!-- ============================================================
+     readonly
+     ============================================================ -->
+
+<input type="text" value="Izaak" readonly>
+
+<!--
+    readonly
+    = impede a edição do valor pelo usuário,
+    mas permite que o valor continue disponível
+    no formulário.
+-->
+
+
+<!-- ============================================================
+     min / max
+     ============================================================ -->
+
+<input type="number" min="1" max="100">
+
+<!--
+    min="1"
+    = valor mínimo.
+
+    max="100"
+    = valor máximo.
+-->
+
+
+<!-- ============================================================
+     minlength / maxlength
+     ============================================================ -->
+
+<input type="text" minlength="3" maxlength="20">
+
+<!--
+    minlength="3"
+    = mínimo de 3 caracteres.
+
+    maxlength="20"
+    = máximo de 20 caracteres.
+-->
+
+
+<!-- ============================================================
+     <textarea>
+     ============================================================ -->
+
+<textarea name="mensagem" rows="5" cols="30" placeholder="Digite sua mensagem"></textarea>
+
+<!--
+    <textarea> = campo para textos maiores.
+
+    name
+    = nome do campo.
+
+    rows
+    = quantidade aproximada de linhas.
+
+    cols
+    = quantidade aproximada de colunas.
+
+    placeholder
+    = texto de orientação.
+-->
+
+
+<!-- ============================================================
+     <select>
+     ============================================================ -->
+
+<select name="cidade">
+
+    <option value="aracaju">
+        Aracaju
+    </option>
+
+    <option value="lagarto">
+        Lagarto
+    </option>
+
+</select>
+
+<!--
+    <select> = cria uma lista de opções.
+
+    name
+    = nome do campo.
+
+    <option>
+    = representa uma opção.
+-->
+
+
+<!-- ============================================================
+     selected
+     ============================================================ -->
+
+<select>
+
+    <option value="aracaju" selected>
+        Aracaju
+    </option>
+
+    <option value="lagarto">
+        Lagarto
+    </option>
+
+</select>
+
+<!--
+    selected
+    = deixa uma opção selecionada inicialmente.
+-->
+
+
+<!-- ============================================================
+     <button>
+     ============================================================ -->
+
+<button>
+    Clique aqui
+</button>
+
+<!--
+    <button> = cria um botão.
+-->
+
+
+<button type="submit">
+    Enviar
+</button>
+
+<!--
+    type="submit"
+    = botão utilizado para enviar o formulário.
+-->
+
+
+<button type="reset">
+    Limpar
+</button>
+
+<!--
+    type="reset"
+    = restaura os campos do formulário.
+-->
+
+
+<button type="button">
+    Clique
+</button>
+
+<!--
+    type="button"
+    = botão comum, normalmente utilizado
+    com JavaScript.
+-->
+
+
+<!-- ============================================================
+     <fieldset>
+     ============================================================ -->
+
+<fieldset>
+
+    <legend>
+        Informações pessoais
+    </legend>
+
+    <label for="nome">
+        Nome:
+    </label>
+
+    <input type="text" id="nome">
+
+</fieldset>
+
+<!--
+    <fieldset>
+    = agrupa campos relacionados.
+
+    <legend>
+    = cria o título do grupo.
+-->
+
+
+<!-- ============================================================
+     RADIO + NAME
+     ============================================================ -->
+
+<input type="radio" name="genero" value="masculino">
+
+<label>
+    Masculino
+</label>
+
+
+<input type="radio" name="genero" value="feminino">
+
+<label>
+    Feminino
+</label>
+
+<!--
+    type="radio"
+    = cria uma opção de seleção.
+
+    name="genero"
+    = coloca os dois radios no mesmo grupo.
+
+    Como possuem o mesmo name,
+    normalmente apenas uma opção pode ser selecionada.
+
+    value
+    = valor associado à opção.
+-->
+
+
+<!-- ============================================================
+     CHECKBOX
+     ============================================================ -->
+
+<input type="checkbox" name="tecnologias" value="html">
+
+<label>
+    HTML
+</label>
+
+
+<input type="checkbox" name="tecnologias" value="css">
+
+<label>
+    CSS
+</label>
+
+<!--
+    checkbox
+    = permite selecionar opções independentes.
+
+    Diferente do radio, várias opções podem
+    ser selecionadas.
+-->
+
+
+<!-- ============================================================
+     autocomplete
+     ============================================================ -->
+
+<input type="text" autocomplete="name">
+
+<!--
+    autocomplete="name"
+    = informa ao navegador que aquele campo
+    pode utilizar dados previamente preenchidos.
+-->

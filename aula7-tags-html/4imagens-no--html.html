@@ -1,0 +1,114 @@
+<!-- ============================================================
+     QUADRO 4 — IMAGENS
+     ============================================================ -->
+
+
+<!-- ============================================================
+     <img>
+     ============================================================ -->
+
+<img src="imagem.jpg" alt="Descrição da imagem">
+
+<!--
+    <img> = adiciona uma imagem.
+
+    src="imagem.jpg"
+    = caminho ou endereço da imagem.
+
+    alt="Descrição da imagem"
+    = texto alternativo da imagem.
+
+    O alt é importante para acessibilidade e também
+    ajuda quando a imagem não pode ser carregada.
+-->
+
+
+<!-- ============================================================
+     width
+     ============================================================ -->
+
+<img src="imagem.jpg" alt="Paisagem" width="500">
+
+<!--
+    width="500"
+    = define uma largura de 500 pixels
+    como dimensão do elemento.
+-->
+
+
+<!-- ============================================================
+     height
+     ============================================================ -->
+
+<img src="imagem.jpg" alt="Paisagem" height="300">
+
+<!--
+    height="300"
+    = define uma altura de 300 pixels.
+-->
+
+
+<!-- ============================================================
+     width + height
+     ============================================================ -->
+
+<img src="imagem.jpg" alt="Paisagem" width="500" height="300">
+
+<!--
+    width + height
+    = definem as dimensões da imagem.
+-->
+
+
+<!-- ============================================================
+     <figure>
+     ============================================================ -->
+
+<figure>
+
+    <img src="paisagem.jpg" alt="Paisagem de uma montanha">
+
+    <figcaption>
+        Paisagem de uma montanha.
+    </figcaption>
+
+</figure>
+
+<!--
+    <figure>
+    = agrupa uma imagem ou outro conteúdo independente.
+
+    <figcaption>
+    = cria uma legenda para o conteúdo.
+-->
+
+
+<!-- ============================================================
+     <picture>
+     ============================================================ -->
+
+<picture>
+
+    <source media="(max-width: 600px)" srcset="imagem-mobile.jpg">
+
+    <img src="imagem-desktop.jpg" alt="Paisagem">
+
+</picture>
+
+<!--
+    <picture>
+    = permite fornecer diferentes versões
+    de uma imagem.
+
+    <source>
+    = define uma fonte alternativa.
+
+    media="..."
+    = define uma condição.
+
+    srcset="..."
+    = define a imagem usada naquela condição.
+
+    <img>
+    = imagem padrão/fallback.
+-->
