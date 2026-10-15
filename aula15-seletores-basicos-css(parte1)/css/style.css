@@ -1,0 +1,25 @@
+/* Seletor universal, seleciona todoas os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Seletor de classe */
+
+.color-red {
+    color: red;
+}
+
+div.main-content h2.heading {
+    font-style: italic;
+    color: red;
+}
+
+div {
+    color: initial;
+    margin-left: 20px;
+}
+
+.pai .filha {
+    color: red;
+}
